@@ -1,7 +1,4 @@
-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  hakan
-
-git remote set-url origin https://hakanbayraktar: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@github.com/hakanbayraktar/kubernetes-lab.git
-https://github.com/hakanbayraktar/kubernetes-lab.git/
+#######kubernetes install on Ubuntu
 
 #####Master and Worker Node
 1-Containerd install
