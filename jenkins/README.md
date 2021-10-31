@@ -1,8 +1,8 @@
 Setup Jenkins On Kubernetes Cluster
 
-
 Deploy and configuring the NFS server:
-on Master Server
+##on Master Server
+
 apt update && apt -y upgrade
 apt install -y nfs-server
 mkdir /data
