@@ -48,8 +48,11 @@ deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 sudo apt-get update
+
 sudo apt-get install -y kubelet kubeadm kubectl  
+
 sudo apt-get install net-tools
+
 sudo apt-mark hold kubelet kubeadm kubectl
 
 ###Only Master Node
@@ -74,8 +77,10 @@ kubeadm token create --print-join-command
 
 ###Only worker Node
 Adding a worker to the cluster
+
 Copy the join command from the previous step and run it as sudo or root on the worker host
 
 ###Only Master Node for verify cluster
+
 kubectl get nodes
 
