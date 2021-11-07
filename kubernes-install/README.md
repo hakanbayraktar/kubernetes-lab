@@ -23,8 +23,11 @@ EOF
 sudo sysctl --system
 
 apt-get update && sudo apt-get install -y containerd 
+
 mkdir -p /etc/containerd
+
 containerd config default | sudo tee /etc/containerd/config.toml
+
 systemctl restart containerd
 
 2-Disabling swap
